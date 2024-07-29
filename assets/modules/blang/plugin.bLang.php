@@ -20,7 +20,7 @@ $settings = $bLang->getSettings();
 
 switch ($e->name) {
     case 'OnWebPageInit':
-
+        evo()->setLocale($bLang->lang);
         $bLang->setClientSettingFields();
         break;
     case 'OnMakeDocUrl':
